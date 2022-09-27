@@ -1,0 +1,7 @@
+DataSet for paper "A branch-and-bound approach for the two-machine flow shop
+stochastic scheduling problem with phase-type distributed
+processing times to minimize the value-at-risk"
+
+A set of test instances has been generated considering n = 10 and 20 jobs. The processing times of the jobs on the machines are modeled through phase-type distributions. These distributions have been randomly generated using the BuTools library starting from the desired mean and number of phases. Specifically, the value of the mean is randomly sampled from three different uniform distributions with support [0,20], [30,50] and [60,80]. The number of phases of the distributions is randomly chosen between 1 and 4. The generation approach available in BuTools provides a randomly generated phase-type distribution, with no control on higher-order moments (e.g., variance and skewness).
+
+Multiple experiments have been carried out considering different risk levels $\alpha$ (5\%, 10\% and 20\%). A set of 20 test instances have been generated, for each combination of the number of jobs n and risk level $\alpha$, for a total of 120 instances.
